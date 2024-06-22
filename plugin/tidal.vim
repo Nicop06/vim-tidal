@@ -2,7 +2,7 @@ if exists("g:loaded_tidal") || &cp || v:version < 700
   finish
 endif
 let g:loaded_tidal = 1
-let s:parent_path = fnamemodify(expand("<sfile>"), ":p:h:s?/plugin??")
+let s:parent_path = expand("<sfile>:p:h:h")
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Default config
